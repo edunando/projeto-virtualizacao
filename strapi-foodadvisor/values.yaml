@@ -13,9 +13,9 @@ backend:
     name: foodadvisor-backend
     replicas: 1
     image:
-      repository: abrantedevops/foodadvisor-api
+      repository: eduardod984/foodadvisor-api
       pullPolicy: IfNotPresent
-      tag: "1.2.0"
+      tag: "latest"
       ports:
         containerPort: 1337
         
@@ -96,7 +96,7 @@ frontend:
     name: foodadvisor-frontend
     replicas: 1
     image:
-      repository: abrantedevops/foodadvisor-client
+      repository: eduardod984/foodadvisor-client
       pullPolicy: IfNotPresent
       tag: ""
       ports:
